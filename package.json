@@ -42,7 +42,8 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
     "prepare-githooks": "husky install",
     "start": "node ./dist/api.js",
-    "docker_build": "docker build -t mathijs/tictactoe:local ."
+    "docker_build": "docker build -t mathijs/tictactoe:local .",
+    "docker_run": "docker run -it --rm --name tictactoe -p 3000:3000 -t mathijs/tictactoe:local"
   },
   "author": "",
   "license": "ISC"
