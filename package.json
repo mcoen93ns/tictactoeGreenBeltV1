@@ -41,7 +41,8 @@
     "lint:fix": "npm run _lint -- --fix ./src/ ./test/",
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,scss,md,json}' --config ./.prettierrc",
     "prepare-githooks": "husky install",
-    "start": "node ./dist/api.js"
+    "start": "node ./dist/api.js",
+    "docker_build": "docker build -t mathijs/tictactoe:local ."
   },
   "author": "",
   "license": "ISC"
